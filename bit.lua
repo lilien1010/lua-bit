@@ -169,7 +169,9 @@ function bit:charCodeAt(s)
 	 if tLen >=1 and tLen<=4 then
 		if tLen == 4 then  
 			int = switch[4](s,pos )  
-			--兼容 js的 unicode 16 编码 ,unicode 到 UTF16的转换
+			-- according to this formula ,the 4 bytes utf8 word needs calculate in this way
+			-- H = Math.floor((c-0x10000) / 0x400)+0xD800  
+			-- L = (c - 0x10000) % 0x400 + 0xDC00
 			H = math.floor((int-0x10000) / 0x400)+0xD800
 			L = (int - 0x10000) % 0x400 + 0xDC00  
 			table.insert(allByte,H)	 	
