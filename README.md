@@ -44,7 +44,7 @@ local allBytes = bit:charCodeAt(str)
 -- allBytes is a table contain 6 numbers，while one Chinese characters takes 3 bytes
 -- if str contains only 1 emoji，it will return a table contains 2 numbers
 ```
- ## more details post here http://blog.hellotalk.org/2016/01/16/lua-charCodeAt/
+## more details post here http://blog.hellotalk.org/2016/01/16/lua-charCodeAt/
  
 ## Feedback & Bug Report
 - Twitter: [@lilien1010]
