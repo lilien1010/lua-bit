@@ -1,6 +1,6 @@
 # lua-bit
  
-#### **lua-bit** is designed for lua binary operation，and there  is a function like charCodeAt in Javascript supported：
+#### **lua-bit** is designed for lua binary operation，and there is a Javascript style function `charCodeAt` accompolished in Lua：
  
   
  
